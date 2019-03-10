@@ -1,0 +1,21 @@
+
+
+git clone -o local git@github.com:luogengbo/repsync.git
+cd repsync
+git pull
+git remote add other git@github.com:luogengbo/repsync2.git
+git fetch other
+git branch -a
+git checkout -B master other/master
+git merge local/master
+git checkout --theirs
+git add ./
+git commit -m "kkdkd"
+git push --set-upstream other master
+
+git branch m
+git checkout m
+
+git checkout -B m other/m
+git merge local/m
+git push --set-upstream other m
