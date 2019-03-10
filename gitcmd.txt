@@ -1,9 +1,4 @@
-# repsync
-Test repository sync
-
-
-
-git clone -o local git@github.com:luogengbo/repsync.git
+t clone -o local git@github.com:luogengbo/repsync.git
 cd repsync
 git pull
 git remote add other git@github.com:luogengbo/repsync2.git
